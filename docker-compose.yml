@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: mariadb
+    ports:
+      - 3307:3306
+    environment:
+      - MARIADB_USER=krimi
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_PASSWORD=root
+      - MARIADB_DATABASE=nest
