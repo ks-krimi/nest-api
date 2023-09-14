@@ -9,3 +9,13 @@ services:
       - MARIADB_ROOT_PASSWORD=root
       - MARIADB_PASSWORD=root
       - MARIADB_DATABASE=nest
+
+  test-db:
+    image: mariadb
+    ports:
+      - 3308:3306
+    environment:
+      - MARIADB_USER=krimi
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_PASSWORD=root
+      - MARIADB_DATABASE=nest
